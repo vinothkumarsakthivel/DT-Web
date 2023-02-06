@@ -113,7 +113,6 @@
 	.footer-content .social li.pinterest a{	background-size: 20px auto;	}
 	.footer-content .social{width: 269px;}
 	.logo {font-size: 56px;line-height: 68px;}
-	#wrapper.inner .menu_trigger,#wrapper.portfolio .menu_trigger{top: 6px;}
 }
 @media only screen and (max-width : 680px) {
 	#container.item-list{width: 300px;}
@@ -158,7 +157,6 @@
 	}
 	.box_contact span.email{font-size: 14px;}
 	#nav ul a:hover, #nav ul a.active,#nav ul a{border: none;}
-	#wrapper.portfolio #main{padding:93px 0 0 0; }
 	.logo{margin: 0 auto 20px;font-size: 40px;		line-height: 52px;}
 }
 @media only screen and (max-width : 480px) {
