@@ -252,26 +252,28 @@ h2.slogan{
 }
 .box_timeline ul li:first-child{margin: 0;}
 .box_timeline ul li .date{
-	background: url(../images/bg_timeline_c.png) no-repeat 50% 0;
+	/*background: url(../images/bg_timeline_c.png) no-repeat 50% 0; */
 	height: 86px;
 	width: 170px;
 	margin: 0 auto 12px;
 	overflow: hidden;
 }
 .box_timeline ul li .date span{
-	font-family: 'novecentosanswide';
+	
+
+	/* font-family: 'novecentosanswide';
 	font-weight:bold;
 	color: #fff;
-	font-size: 14px;
+	/* font-size: 14px;
 	line-height: 16px;
 	display: block;
 	text-align: center;
-	padding: 15px 0 0 0;
+	padding: 15px 0 0 0; */ 
 }
 .box_timeline h3{
 	font-family: 'novecento_sans_widemedium';
 	color: #50af6f;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 16px;
 	display: block;
 	text-align: center;
