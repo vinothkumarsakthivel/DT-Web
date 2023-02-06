@@ -209,6 +209,16 @@ h2.slogan{
 	padding: 34px 0 50px 0;
 	background: url(../images/slogan_bg.gif) no-repeat 50% 0;
 }
+/* Register */
+
+.register-form-background{
+	background-color: #000000;
+}
+
+.register-form{
+	color: #0eff42;
+}
+
 /*main
  */
 #main{
