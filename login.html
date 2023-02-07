@@ -14,6 +14,47 @@
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	<style>
+		body{
+			background-color: black;
+			
+		}
+		.container {
+			background-color: #CBFD76;
+			position: absolute;
+			top: 200px;
+			left: 350px;
+			bottom: 200px;
+  			margin: auto;
+  			width: 40%;
+			height: 50%;
+  			
+		}
+		.login {
+			text-align:center;
+			color: #fbed14;
+			
+		}
+		.sumbit {
+			text-align: center;
+			size:30px;
+			
+		}
+		.password{
+			margin: left 20px;
+			right: 20%;
+			bottom: 50%;
+		}
+		.email{
+			right: 25%;
+			bottom: 80%;
+		}
+		.fpass{
+			text-align: left;
+		}
+
+
+	</style>
 </head>
 <body>
 	<!-- <div id="wrapper" class="portfolio">
@@ -49,19 +90,28 @@
 	<script src="js/cells-by-row.js"></script>
 	<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
 	<script type="text/javascript" src="js/main.js"></script> -->
-	<div>
-		<div>
+	<div class="container">
+		<div class="login">
 			<h1>Login</h1>
 		</div>
-		<div>
+		<div class="email">
 			<form action="/">
-				<label>Email</label>
-				<input type="email" name="email" id="email">
+				<label> Email ID</label>
+				<input type="email" name="email" id="email"><br>
+		</div>
+		<div class="password">
 				<label>Password</label>
-				<input type="password" name="password" id="password">
+				<input type="password" name="password" id="password"><br>
+				<div class="sumbit">
 				<button type="submit">Login</button>
-				
+		 </div>
 			</form>
+			<div class="fpass">
+				<a href="/">Forget password ?</a><br>
+			</div>
+		     <div class="no account">
+			  <a href="/register.html">Doesn't have an account ?</a>
+			 </div>
 		</div>
 	</div>
 
