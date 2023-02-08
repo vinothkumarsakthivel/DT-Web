@@ -26,20 +26,45 @@
 
 
     .btr {
+        font-size: 22px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        
 
-        border-top-right-radius: 5px !important;
-        color: #FFF606;
+       
+        background: linear-gradient(to left,
+                    #FCAC43,
+                    #E19D49,
+                    #FFF606,
+                    #C6F972);
+                    -webkit-background-clip: text;
+            color: transparent;
+        
+
+                    
+                    
+
     }
+    
 
 
     .btl {
-
+        margin-right: 120px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold',serif;
+        font-size: 23px;
         border-top-left-radius: 5px !important;
-        color: #FFF606;
+        background: linear-gradient(to left,
+                    #FCAC43,
+                    #E19D49,
+                    #FFF606,
+                    #C6F972);
+                    -webkit-background-clip: text;
+            color: transparent;
+        
+
     }
 
     .btn-dark {
-        color: #fff;
+        color: rgb(255, 255, 255);
         background-color: #0d6efd;
         border-color: #0d6efd;
     }
@@ -60,14 +85,15 @@
 
     .nav-pills .nav-link {
         border-radius: 0px;
-        border-bottom: 1px solid #eef0f3;
+        border-bottom: 1px solid #000000;
 
     }
 
     .nav-item {
         display: table-cell;
-        background: #0d6efd2e;
+        background: #0a0a0a2e;
     }
+        
 
 
     .form {
@@ -91,7 +117,7 @@
 
     .form button {
 
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
@@ -108,7 +134,7 @@
     html,
     body {
         height: 100%;
-        background-color: #152733;
+        background-color: #000000;
         overflow: hidden;
     }
 
@@ -138,8 +164,8 @@
     }
 
     .form-content .form-items {
-        border: 3px solid #fff;
-        padding: 40px;
+        border: 3px solid rgb(243, 247, 7);
+        padding: 60px;
         display: inline-block;
         width: 100%;
         min-width: 540px;
@@ -152,11 +178,17 @@
     }
 
     .form-content h3 {
-        color: #fff;
+        background: linear-gradient(to left,
+                    #FCAC43,
+                    #E19D49,
+                    #FFF606,
+                    #C6F972);
+                    -webkit-background-clip: text;
+            color: transparent;
         text-align: left;
         font-size: 28px;
         font-weight: 600;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
 
     .form-content h3.form-title {
@@ -169,7 +201,7 @@
         font-size: 17px;
         font-weight: 300;
         line-height: 20px;
-        margin-bottom: 30px;
+        margin-bottom: 5px;
     }
 
 
@@ -237,7 +269,7 @@
     .form-content textarea:hover,
     .form-content textarea:focus {
         border: 0;
-        background-color: #ebeff8;
+        background-color: #f1f8eb;
         color: #8D8D8D;
     }
 
@@ -248,6 +280,7 @@
 
     .invalid-feedback {
         color: #ff606e;
+      
     }
 
     .valid-feedback {
@@ -321,6 +354,22 @@
     .slider.round:before {
         border-radius: 50%;
     }
+    .registor{
+        background-color: #000;
+    }
+    .button{
+        background-color: #73ff00;
+  border: none;
+  color: rgb(82, 245, 6);
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color:transparent;
+    }
+    
+    
 </style>
 
 <body>
@@ -337,6 +386,7 @@
                         <div class="form-holder">
                             <div class="form-content">
                                 <div class="form-items">
+                                    <div class="registor">
                                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                         <li class="nav-item text-center">
                                             <a class="nav-link active btl" id="pills-home-tab" data-toggle="pill" href="register.html"
@@ -344,10 +394,11 @@
                                         </li>
                                         <li class="nav-item text-center">
                                             <a class="nav-link btr" id="pills-profile-tab" data-toggle="pill" href="Institutepage.html"
-                                                role="tab" aria-controls="pills-profile" aria-selected="false">InstitutionRegister</a>
+                                                role="tab" aria-controls="pills-profile" aria-selected="false">Institution Register</a>
                                         </li>
                         
                                     </ul>
+                                    </div>
                                     <h3>Register Today</h3>
                                     <p>Fill in the data below.</p>
                                     <form class="requires-validation">
@@ -388,11 +439,10 @@
                                         </div>
 
 
-                                        <div class="col-md-12 mt-3">
-                                            <label class="mb-3 mr-1" for="gender">Gender: </label>
+                                        <div class=col-md-12 mt-3"col-md-12 mt-3">
+                                            <label class="mb-3 mr-1 " for="gender">Gender: </label>
 
-                                            <input type="radio" class="btn-check" name="gender" id="male"
-                                                autocomplete="off" required>
+                                            <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" required>
                                             <label class="btn btn-sm btn-outline-secondary" for="male">Male</label>
 
                                             <input type="radio" class="btn-check" name="gender" id="female"
@@ -401,10 +451,15 @@
 
                                             <input type="radio" class="btn-check" name="gender" id="secret"
                                                 autocomplete="off" required>
-                                            <label class="btn btn-sm btn-outline-secondary" for="secret">Secret</label>
+                                            <label class="btn btn-sm btn-outline-secondary" for="secret">other
+
+                                            </label><br>
+                                            <br>
                                             <div class="valid-feedback mv-up">You selected a gender!</div>
                                             <div class="invalid-feedback mv-up">Please select a gender!</div>
+                                        
                                         </div>
+                                        
 
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
@@ -414,11 +469,15 @@
                                                 correct!
                                             </div>
                                         </div>
+                                        <div class="button">
 
 
                                         <div class="form-button mt-3">
+                                            
                                             <button onclick="registervalue" id="submit" type="submit"
                                                 class="btn btn-primary">Register</button>
+                                                
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
@@ -443,9 +502,10 @@
                             }, false)
                         })
                 }
-
+                
 
             </script>
+            </div>
 </body>
 
 </html>
