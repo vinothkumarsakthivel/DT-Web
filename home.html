@@ -8,57 +8,35 @@
     <title>Home page</title>
 </head>
 <style>
-    body {
-        background-color: rgb(0, 0, 0);
+    body{
+        background-color: black;
     }
-
-    div header h1 {
-        text-align: center;
-        color: #fb9f2c;
-    }
-
-    img {
-        margin-left: 5%;
-        margin-top: -5%;
-    }
-
-    button {
-        position: relative;
-        border-radius: 100%;
-        shape-outside: none;
-        margin-left: 93%;
-        margin-top: -60%;
-        background-color: rgb(0, 0, 0);
-    }
-
-    div footer h1 {
-        text-align: center;
-        color: #cbfd72;
-    }
+    .multicolor-text {
+            text-align: center;
+            font-size: 50px;
+            background: linear-gradient(to left,
+                    violet,
+                    indigo,
+                    blue,
+                    green,
+                    yellow,
+                    orange,
+                    red);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
 </style>
 
 <body>
     <div>
         <header>
-            <h1 style="margin-left: -22%; margin-top:0%;"> DESIGN </h1>
-            <h1 style="color: green;">THINKING</h1>
-            <img src="images/trace.svg" width="130" height="130" style="right: 10%;">
-            <button onclick="myFunction()">
-                <img src="images/login-removebg-preview.png" style="margin-bottom: 55%" ; margin-left: -50%; alt="login"
-                    width="70"></button>
+            <h1 style="text-align: center; margin-top: 2%;" class="multicolor-text"> DESIGN THINKING</h1>
         </header>
     </div>
-    <div class="container">
-        <img src="images/stay with us (1).gif" width="" height="500" style="margin-left: 20%;">
-    </div>
     <div>
-        <footer>
-            <h1>Stay with us,Connect with us, Grow with us</h1>
-        </footer>
+        <img src="images/trace.svg" height="100">
+        <img src="images/login-removebg-preview.png" height="100">
     </div>
-    <script>
-
-    </script>
 </body>
 
 </html>
