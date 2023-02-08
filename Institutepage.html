@@ -508,7 +508,7 @@
             display: none;
         }
 
-        .logo{
+        .logo {
             margin-left: 50%;
         }
     }
@@ -547,9 +547,10 @@
                     <div class="main active">
                         <img><i class="fa fa-smile-o">
                             <div class="logo">
-                             <img src="./images/logo.png" height="100px" width="100px" style="margin-right: 45%; position: absolute; top:-100px; left:48%;">
+                                <img src="./images/logo.png" height="100px" width="100px"
+                                    style="margin-right: 45%; position: absolute; top:-100px; left:48%;">
                             </div>
-                        </i></img> 
+                        </i></img>
                         <div class="text">
                             <h2>Institution Information</h2>
                             <p>Enter your personal information to get closer to copanies.</p>
@@ -645,8 +646,8 @@
                     </div>
                     <div class="main">
                         <small><i class="fa fa-smile-o">
-                            <img src="./images/logo.jpg" height="200px"  width="200px">
-                        </i></small>
+                                <img src="./images/logo.jpg" height="200px" width="200px">
+                            </i></small>
                         <div class="text">
                             <h2>Connect with</h2>
                             <p>Can you talk about your past work experience?</p>
@@ -736,7 +737,7 @@
 
 
 
-                    
+
                 </div>
             </div>
         </div>
@@ -747,7 +748,7 @@
         var step_list = document.querySelectorAll(".progress-bar li");
         var num = document.querySelector(".step-number");
         let formnumber = 0;
-    
+
         next_click.forEach(function (next_click_form) {
             next_click_form.addEventListener('click', function () {
                 if (!validateform()) {
@@ -759,7 +760,7 @@
                 contentchange();
             });
         });
-    
+
         var back_click = document.querySelectorAll(".back_button");
         back_click.forEach(function (back_click_form) {
             back_click_form.addEventListener('click', function () {
@@ -769,11 +770,11 @@
                 contentchange();
             });
         });
-    
+
         var username = document.querySelector("#user_name");
         var shownname = document.querySelector(".shown_name");
-    
-    
+
+
         var submit_click = document.querySelectorAll(".submit_button");
         submit_click.forEach(function (submit_click_form) {
             submit_click_form.addEventListener('click', function () {
@@ -782,47 +783,47 @@
                 updateform();
             });
         });
-    
+
         var heart = document.querySelector(".fa-heart");
         heart.addEventListener('click', function () {
             heart.classList.toggle('heart');
         });
-    
-    
+
+
         var share = document.querySelector(".fa-share-alt");
         share.addEventListener('click', function () {
             share.classList.toggle('share');
         });
-    
-    
-    
+
+
+
         function updateform() {
             main_form.forEach(function (mainform_number) {
                 mainform_number.classList.remove('active');
             })
             main_form[formnumber].classList.add('active');
         }
-    
+
         function progress_forward() {
             // step_list.forEach(list => {
-    
+
             //     list.classList.remove('active');
-    
+
             // }); 
-    
-    
+
+
             num.innerHTML = formnumber + 1;
             step_list[formnumber].classList.add('active');
         }
-    
+
         function progress_backward() {
             var form_num = formnumber + 1;
             step_list[form_num].classList.remove('active');
             num.innerHTML = form_num;
         }
-    
+
         var step_num_content = document.querySelectorAll(".step-number-content");
-    
+
         function contentchange() {
             step_num_content.forEach(function (content) {
                 content.classList.remove('active');
@@ -830,8 +831,8 @@
             });
             step_num_content[formnumber].classList.add('active');
         }
-    
-    
+
+
         function validateform() {
             validate = true;
             var validate_inputs = document.querySelectorAll(".main.active input");
@@ -845,7 +846,7 @@
                 }
             });
             return validate;
-    
+
         }
     </script>
 </body>
