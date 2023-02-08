@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <!-- <meta charset="UTF-8">
+    <head>
+        <!-- <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <title>Document</title>
-</head>
-
-<style>
+        <title>Document</title>
+    </head>
+    <style>
     body {
 
-        background-color: #000;
+        background-color: #000000;
     }
 
 
@@ -229,19 +227,37 @@
         transition: all 0.3s ease;
         margin-top: 16px;
     }
+    .button-register{
+        padding: 15px 32px;
+        margin-top: 25px;
+        text-align: center;
+    }
 
 
     .btn-primary {
-        background-color: #6C757D;
+        font-size: large;
+        background-color: #08f26e;
         outline: none;
         border: 0px;
         box-shadow: none;
     }
-
-    .btn-primary:hover,
+    .btn-primary:hover{
+        background: linear-gradient(to left,
+                    #ff8c00,
+                    #ffa500,
+                    #ffe65b,
+                    #ffee07,
+                    #FFE20B,
+                    #F4FF00,
+                    #C0FF02,
+                    #08f26e);
+            -webkit-background-clip: text;
+            color: transparent;
+    }
     .btn-primary:focus,
     .btn-primary:active {
-        background-color: #495056;
+        transform: translateY(6px);
+        background-color: #4796dc;
         outline: none !important;
         border: none !important;
         box-shadow: none;
@@ -368,115 +384,141 @@
   font-size: 16px;
   color:transparent;
     }
-    
-    
-</style>
-
-<body>
-    <div class="d-flex justify-content-center align-items-center mt-5">
-
-
-        <div class="card">
-
-            
-            <div style="margin-left: 200%;">
-                <div class="form-body">
-
-                    <div class="row">
-                        <div class="form-holder">
-                            <div class="form-content">
-                                <div class="form-items">
-                                    <div class="registor">
-                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                        <li class="nav-item text-center">
-                                            <a class="nav-link active btl" id="pills-home-tab" data-toggle="pill" href="register.html"
-                                                role="tab" aria-controls="pills-home" aria-selected="true">Register</a>
-                                        </li>
-                                        <li class="nav-item text-center">
-                                            <a class="nav-link btr" id="pills-profile-tab" data-toggle="pill" href="Institutepage.html"
-                                                role="tab" aria-controls="pills-profile" aria-selected="false">Institution Register</a>
-                                        </li>
-                        
-                                    </ul>
-                                    </div>
-                                    <h3>Register Today</h3>
-                                    <p>Fill in the data below.</p>
-                                    <form class="requires-validation">
-                                        <div class="col-md-12">
-                                            <input class="form-control" type="text" name="fullname"
-                                                placeholder="Full Name" required>
-                                            <div class="valid-feedback" id="fullname">Fullname field is valid!</div>
-                                            <div class="invalid-feedback">Fullname field cannot be blank!</div>
+    </style>
+    <body>
+        <div class="d-flex justify-content-center align-items-center mt-5">
+            <div class="card">
+                <div style="margin-left: 200%;">
+                    <div class="form-body">
+                        <div class="row">
+                            <div class="form-holder">
+                                <div class="form-content">
+                                    <div class="form-items">
+                                        <div class="registor">
+                                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                                <li class="nav-item text-center">
+                                                    <a
+                                                        class="nav-link active btl"
+                                                        id="pills-home-tab"
+                                                        data-toggle="pill"
+                                                        href="register.html"
+                                                        role="tab"
+                                                        aria-controls="pills-home"
+                                                        aria-selected="true"
+                                                    >Register</a>
+                                                </li>
+                                                <li class="nav-item text-center">
+                                                    <a
+                                                        class="nav-link btr"
+                                                        id="pills-profile-tab"
+                                                        data-toggle="pill"
+                                                        href="Institutepage.html"
+                                                        role="tab"
+                                                        aria-controls="pills-profile"
+                                                        aria-selected="false"
+                                                    >Institution Register</a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <div class="col-md-12">
-                                            <input class="form-control" type="text" name="username"
-                                                placeholder="User Name" required>
-                                            <div class="valid-feedback">Username field is valid!</div>
-                                            <div class="invalid-feedback">Username field cannot be blank!</div>
-                                        </div>
-
-                                        <div class="col-md-12">
-                                            <input class="form-control" type="email" name="email"
-                                                placeholder="E-mail Address" required>
-                                            <div class="valid-feedback">Email field is valid!</div>
-                                            <div class="invalid-feedback">Email field cannot be blank!</div>
-                                        </div>
-
-                                        <div class="col-md-12">
-                                            <input class="form-control" type="text" name="mobilenumber"
-                                                placeholder="Mobile Number" required>
-                                            <div class="valid-feedback">Mobile Number field is valid!</div>
-                                            <div class="invalid-feedback">Mobile Number field cannot be blank!</div>
-                                        </div>
-
-                                        <div class="col-md-12">
-                                            <input class="form-control" type="password" name="password"
-                                                placeholder="Password" required>
-                                            <div class="valid-feedback">Password field is valid!</div>
-                                            <div class="invalid-feedback">Password field cannot be blank!</div>
-
-
-                                        </div>
-
-
-                                        <div class=col-md-12 mt-3"col-md-12 mt-3">
-                                            <label class="mb-3 mr-1 " for="gender">Gender: </label>
-
-                                            <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" required>
-                                            <label class="btn btn-sm btn-outline-secondary" for="male">Male</label>
-
-                                            <input type="radio" class="btn-check" name="gender" id="female"
-                                                autocomplete="off" required>
-                                            <label class="btn btn-sm btn-outline-secondary" for="female">Female</label>
-
-                                            <input type="radio" class="btn-check" name="gender" id="secret"
-                                                autocomplete="off" required>
-                                            <label class="btn btn-sm btn-outline-secondary" for="secret">other
-
-                                            </label><br>
-                                            <br>
-                                            <div class="valid-feedback mv-up">You selected a gender!</div>
-                                            <div class="invalid-feedback mv-up">Please select a gender!</div>
-                                        
-                                        </div>
-                                        
-
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
-                                                required>
-                                            <label class="form-check-label">I confirm that all data are correct</label>
-                                            <div class="invalid-feedback">Please confirm that the entered data are all
-                                                correct!
+                                        <h3>Register Today</h3>
+                                        <p>Fill in the data below.</p>
+                                        <form class="requires-validation">
+                                            <div class="col-md-12">
+                                                <input
+                                                    class="form-control"
+                                                    type="text"
+                                                    name="fullname"
+                                                    placeholder="Full Name"
+                                                    required
+                                                >
                                             </div>
-                                        </div>
-                                        <div class="button">
-
-
-                                        <div class="form-button mt-3">
-                                            
-                                            <button onclick="registervalue" id="submit" type="submit"
-                                                class="btn btn-primary">Register</button>
-                                                
+                                            <div class="col-md-12">
+                                                <input
+                                                    class="form-control"
+                                                    type="text"
+                                                    name="username"
+                                                    placeholder="User Name"
+                                                    required
+                                                >
+                                            </div>
+                                            <div class="col-md-12">
+                                                <input
+                                                    class="form-control"
+                                                    type="email"
+                                                    name="email"
+                                                    placeholder="E-mail Address"
+                                                    required
+                                                >
+                                            </div>
+                                            <div class="col-md-12">
+                                                <input
+                                                    class="form-control"
+                                                    type="text"
+                                                    name="mobilenumber"
+                                                    placeholder="Mobile Number"
+                                                    required
+                                                >
+                                            </div>
+                                            <div class="col-md-12">
+                                                <input
+                                                    class="form-control"
+                                                    type="password"
+                                                    name="password"
+                                                    placeholder="Password"
+                                                    required
+                                                >
+                                            </div>
+                                            <br>
+                                            <div class="col-md-12" mt-3 "col-md-12 mt-3">
+                                                <label class="mb-3 mr-1 " for="gender">Gender:</label>
+                                                <input
+                                                    type="radio"
+                                                    class="btn-check"
+                                                    name="gender"
+                                                    id="male"
+                                                    autocomplete="off"
+                                                    required
+                                                >
+                                                <label class="btn btn-sm btn-outline-secondary" for="male">Male</label>
+                                                <input
+                                                    type="radio"
+                                                    class="btn-check"
+                                                    name="gender"
+                                                    id="female"
+                                                    autocomplete="off"
+                                                    required
+                                                >
+                                                <label class="btn btn-sm btn-outline-secondary" for="female">Female</label>
+                                                <input
+                                                    type="radio"
+                                                    class="btn-check"
+                                                    name="gender"
+                                                    id="secret"
+                                                    autocomplete="off"
+                                                    required
+                                                >
+                                                <label class="btn btn-sm btn-outline-secondary" for="secret">
+                                                    other
+                                                </label>
+                                            </div>
+                                            <br>
+                                            <div class="form-check">
+                                                <input
+                                                    class="form-check-input"
+                                                    type="checkbox"
+                                                    value=""
+                                                    id="invalidCheck"
+                                                    required
+                                                >
+                                                <label class="form-check-label">I confirm that all data are correct</label>
+                                            </div>
+                                            <div class="button-register">
+                                                <button
+                                                    onclick="registervalue"
+                                                    id="submit"
+                                                    type="submit"
+                                                    class="btn btn-primary"
+                                                >Register</button>
                                             </div>
                                         </div>
                                     </form>
@@ -502,10 +544,7 @@
                             }, false)
                         })
                 }
-                
-
             </script>
-            </div>
-</body>
-
+        </div>
+    </body>
 </html>
