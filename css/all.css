@@ -159,7 +159,17 @@ a:hover{text-decoration:underline;}
 	text-align:center;
 	font-family: 'novecentosanswide';
 	font-weight:bold;
-	color: #fff;
+	background: linear-gradient(to left,
+	#ff8c00,
+	#ffa500,
+	#ffe65b,
+	#ffee07,
+	#FFE20B,
+	#F4FF00,
+	#C0FF02,
+	#08f26e);
+-webkit-background-clip: text;
+color: transparent;
 	font-size: 72px;
 	line-height: 74px;
 	display: block;
@@ -180,18 +190,18 @@ a:hover{text-decoration:underline;}
 }
 #nav ul li:first-child{padding: 0;}
 #nav ul a {
-	color: #aeecc2;
+	color: #faf600;
 	font-size: 18px;
 	line-height: 20px;
 	text-transform: uppercase;
 	padding: 0 0 10px;
-	border-bottom: 4px solid #62bb7f;
+	border-bottom: 4px solid #000000;
 	font-family: 'novecentosanswide';
 	font-weight: normal;
 }
 #nav ul a:hover,#nav ul a.active{
-	color: #fff;
-	border-bottom: 4px solid #fff;
+	color: #faf600;
+	border-bottom: 4px solid rgb(15, 15, 15);
 	text-decoration: none;
 	-webkit-transition: all 0.5s ease-in-out;
 -moz-transition: all 0.5s ease-in-out;
@@ -205,7 +215,7 @@ h2.slogan{
 	font-family: 'novecento_sans_widebook';
 	font-size: 30px;
 	line-height: 32px;
-	color: #aeecc2;
+	color: #fffb00;
 	padding: 34px 0 50px 0;
 	background: url(../images/slogan_bg.gif) no-repeat 50% 0;
 }
@@ -234,7 +244,17 @@ h2.slogan{
 	font-family: 'novecento_sans_widebook';
 	font-size: 30px;
 	line-height: 32px;
-	color: #fff;
+	background: linear-gradient(to left,
+	#ff8c00,
+	#ffa500,
+	#ffe65b,
+	#ffee07,
+	#FFE20B,
+	#F4FF00,
+	#C0FF02,
+	#08f26e);
+-webkit-background-clip: text;
+color: transparent;
 	margin: 0 0 81px;
 }
 .box_timeline_holder{
@@ -282,7 +302,17 @@ h2.slogan{
 }
 .box_timeline h3{
 	font-family: 'novecento_sans_widemedium';
-	color: #50af6f;
+	background: linear-gradient(to left,
+	#ff8c00,
+	#ffa500,
+	#ffe65b,
+	#ffee07,
+	#FFE20B,
+	#F4FF00,
+	#C0FF02,
+	#08f26e);
+-webkit-background-clip: text;
+color: transparent;
 	font-size: 16px;
 	line-height: 16px;
 	display: block;
@@ -291,7 +321,17 @@ h2.slogan{
 }
 .box_timeline p{
 	font-family: Arial, Helvetica, sans-serif;
-	color: #a4a7ac;
+	background: linear-gradient(to left,
+	#ff8c00,
+	#ffa500,
+	#ffe65b,
+	#ffee07,
+	#FFE20B,
+	#F4FF00,
+	#C0FF02,
+	#08f26e);
+-webkit-background-clip: text;
+color: transparent;
 	font-size: 16px;
 	line-height: 18px;
 	display: block;
@@ -400,17 +440,20 @@ h2.slogan{
 	margin: 0 auto 45px;
 	width: 670px;
 }
-.footer-content .social li{
+.footer-content .social li {
 	float:left;
-	margin: 0 0 0 10px;
-	border-radius: 50%;
+	
+	border-radius: 50% ;
 	behavior: url(css/PIE.htc);
 	text-indent: -9999px;
 	background: #FBED14;
-	width: 123px;
-	height: 123px;
-	position:relative;
+	width: 80px;
+	height: 80px;
+	position:center;
 	display: table;
+	margin-left: 110px;
+	
+	
 }
 .footer-content .social li:first-child{margin: 0;}
 .footer-content .social li:hover{
@@ -422,7 +465,7 @@ transition: all 0.5s ease-in-out;
 }
 .footer-content .social li a{
 	display: table-cell;	
-	position: relative;
+	position: center;
 }
 .footer-content .social li.email a{background: url(../images/icon_email.png) no-repeat 50% 50% ;}
 .footer-content .social li.facebook a{background: url(../images/icon_fb.png) no-repeat 50% 50%;}
@@ -433,8 +476,19 @@ transition: all 0.5s ease-in-out;
 	font:18px/20px Arial, Helvetica, sans-serif;
 	display: block;
 	text-align: center;
-	color: #929c95;
+	background: linear-gradient(to left,
+	#ff8c00,
+	#ffa500,
+	#ffe65b,
+	#ffee07,
+	#FFE20B,
+	#F4FF00,
+	#C0FF02,
+	#08f26e);
+-webkit-background-clip: text;
+color: transparent;
 }
+
 /* begin add	 */
 .popup_portfolio{
 	max-width: 1132px;
