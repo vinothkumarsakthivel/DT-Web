@@ -21,13 +21,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #eee;
+        background-color: #000000;
     }
 
     .container .card {
         height: 500px;
         width: 800px;
-        background-color: #fff;
+        background-color: #D6F945   ;
         position: relative;
         box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         font-family: 'Poppins', sans-serif;
@@ -43,7 +43,7 @@
 
     .container .card .left-side {
         width: 35%;
-        background-color: #304767;
+        background-color: #FCB944;
         height: 100%;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
@@ -54,7 +54,9 @@
 
     /*left-side-start*/
     .left-heading {
-        color: #fff;
+        color: #535353;
+        font-weight: bold;
+        font-size: larger;
 
     }
 
@@ -139,32 +141,9 @@
     .d-none {
         display: none;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /*left-side-end*/
     .container .card .right-side {
         width: 65%;
-        background-color: #fff;
         height: 100%;
         border-radius: 20px;
     }
@@ -221,9 +200,6 @@
         position: relative;
 
     }
-
-
-
     input[type="text"] {
         width: 100%;
         height: 40px;
@@ -401,12 +377,6 @@
         text-decoration: none;
         color: blue;
     }
-
-
-
-
-
-
     .checkmark__circle {
         stroke-dasharray: 166;
         stroke-dashoffset: 166;
@@ -460,16 +430,6 @@
             box-shadow: inset 0px 0px 0px 30px #7ac142;
         }
     }
-
-
-
-
-
-
-
-
-
-
     .warning {
         border: 1px solid red !important;
     }
@@ -539,9 +499,6 @@
                         <li>Connect with</li>
                         <li>User Photo</li>
                     </ul>
-
-
-
                 </div>
                 <div class="right-side">
                     <div class="main active">
@@ -557,7 +514,7 @@
                         </div>
                         <div class="input-text">
                             <div class="input-div">
-                                <input type="text" required require id="user_name">
+                                <input type="text" required id="user_name">
                                 <span>Institution Name</span>
                             </div>
                             <div class="input-div">
@@ -567,28 +524,19 @@
                         </div>
                         <div class="input-text">
                             <div class="input-div">
-                                <input type="text" required require>
+                                <input type="text" required>
                                 <span>Phone number</span>
                             </div>
                             <div class="input-div">
-                                <input type="text" required require>
+                                <input type="text" required>
                                 <span>Institution e-mail</span>
                             </div>
                         </div>
                         <div class="input-text">
+                           
                             <div class="input-div">
-                                <select>
-                                    <option>Select Course</option>
-                                    <option>BCA</option>
-                                    <option>B-TECH</option>
-                                    <option>BA</option>
-                                    <option>B-COM</option>
-                                    <option>B-SC</option>
-                                    <option>MBA</option>
-                                    <option>MCA</option>
-                                    <option>M-COM</option>
-                                    <option>M-TECH</option>
-                                </select>
+                                <input type="text" required>
+                                <span>Enter your Board</span>
                             </div>
                         </div>
                         <div class="buttons">
@@ -596,14 +544,13 @@
                         </div>
                     </div>
                     <div class="main">
-                        <small><i class="fa fa-smile-o"></i></small>
                         <div class="text">
                             <h2>Location</h2>
                             <p>Inform companies about your education life.</p>
                         </div>
                         <div class="input-text">
                             <div class="input-div">
-                                <input type="text" required require>
+                                <input type="text" required>
                                 <span>Institution Address</span>
                             </div>
                         </div>
@@ -645,9 +592,6 @@
                         </div>
                     </div>
                     <div class="main">
-                        <small><i class="fa fa-smile-o">
-                                <img src="./images/logo.jpg" height="200px" width="200px">
-                            </i></small>
                         <div class="text">
                             <h2>Connect with</h2>
                             <p>Can you talk about your past work experience?</p>
