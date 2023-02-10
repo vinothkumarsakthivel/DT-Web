@@ -2,22 +2,26 @@
 <!--[if lte IE 8]> <html class="oldie" lang="en"> <![endif]-->
 <!--[if IE 9]> <html class="ie9" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!-->
-<html lang="en"> <!--<![endif]-->
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport"
-		content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="format-detection" content="telephone=no">
-	<title>John Markowitz</title>
-	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/all.css" />
-	<link rel="stylesheet" href="css/screen.css" />
-	<!--[if lt IE 9]>
+<html lang="en">
+    <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="format-detection" content="telephone=no">
+        <title>John Markowitz</title>
+        <link
+            rel="stylesheet"
+            href="js/fancybox/jquery.fancybox.css"
+            type="text/css"
+            media="screen"
+        >
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/screen.css">
+        <!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<style>
+        <style>
 		body {
 			margin: 0;
 			padding: 0;
@@ -30,7 +34,8 @@
 			overflow: hidden
 		}
 
-		@media screen and (max-width: 600px; ) {
+		@media screen and (max-width: 600px
+		) {
 			body {
 				background-size: cover;
 			}
@@ -47,13 +52,14 @@
 			transform: translate(-50%, -50%);
 			width: 350px;
 			min-height: 200px;
-			background: #000000;
+			background:linear-gradient(to left, #FCAC43, #E19D49, #FFF606, #C6F972);
 			border-radius: 10px;
 			padding: 40px;
 			box-sizing: border-box
 		}
 
 		.user {
+			pointer-events: none;
 			margin: 0 auto;
 			display: block;
 			margin-bottom: 20px
@@ -86,14 +92,14 @@
 
 		.loginBox input[type="text"]:hover,
 		.loginBox input[type="password"]:hover {
-			color: #42F3FA;
-			border: 1px solid #42F3FA;
-			box-shadow: 0 0 5px rgba(0, 255, 0, .3), 0 0 10px rgba(0, 255, 0, .2), 0 0 15px rgba(0, 255, 0, .1), 0 2px 0 black
+			color: #000000;
+			border: 1px solid #535353;
+			box-shadow: 0 0 5px rgb(19, 19, 19), 0 0 10px rgba(255, 25, 0, 0.2), 0 0 15px rgba(0, 255, 0, .1), 0 2px 0 black
 		}
 
 		.loginBox input[type="text"]:focus,
 		.loginBox input[type="password"]:focus {
-			border-bottom: 2px solid #42F3FA
+			border-bottom: 2px solid #0d0e0e
 		}
 
 		.inputBox {
@@ -127,35 +133,52 @@
 		}
 
 		a:hover {
-			color: #00ffff
+			color: #535353
 		}
 
 		p {
 			color: #0000ff
 		}
-	</style>
-</head>
-
-<body>
-	<div class="loginBox"> <img class="user" src="https://i.ibb.co/yVGxFPR/2.png" height="100px" width="100px">
-		<h3>Sign in here</h3>
-		<form action="login.php" method="post">
-			<div class="inputBox"> <input id="uname" type="text" name="Username" placeholder="Username"> <input
-					id="pass" type="password" name="Password" placeholder="Password"> </div> <input type="submit"
-				name="" value="Login">
-		</form>
-		<a href="#">Forget Password<br> </a>
-		<div class="text-center">
-			<p style="color: #59238F;">Sign-Up</p>
-		</div>
-
-	</div>
-
-
-
-
-
-
-</body>
-
+		.text-center{
+			text-align: center;
+			margin-top: 14px;
+			font-size: larger;
+		}
+        </style>
+    </head>
+    <body>
+        <div class="loginBox">
+            <img
+                class="user"
+                src="https://i.ibb.co/yVGxFPR/2.png"
+                height="100px"
+                width="100px"
+            >
+            <h3>Sign in here</h3>
+            <form action="#" method="post">
+                <div class="inputBox">
+                    <input
+                        id="uname"
+                        type="text"
+                        name="Username"
+                        placeholder="Username"
+                    >
+                    <input
+                        id="pass"
+                        type="password"
+                        name="Password"
+                        placeholder="Password"
+                    >
+                </div>
+                <input type="submit" name="" value="Login">
+            </form>
+            <a href="#">
+                Forget Password
+                <br>
+            </a>
+            <div class="text-center">
+                <a style="color: #59238F;" href="register.html">Didn't have a account ???</a>
+            </div>
+        </div>
+    </body>
 </html>
