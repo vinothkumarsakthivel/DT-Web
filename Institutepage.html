@@ -471,6 +471,22 @@
         .logo {
             margin-left: 50%;
         }
+        .customfile{
+            border: 5px #000;
+            border-radius: 20px;
+            padding: 2px;
+            font-size: 40px;
+        }
+        .customfile::-webkit-file-upload-button{
+            background: #000;
+            color: #fff;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+
+        }
+       
        
     }
        
@@ -487,8 +503,7 @@
                     </div>
                     <div class="steps-content">
                         <h3>Step <span class="step-number">1</span></h3>
-                        <p class="step-number-content active">Enter your personal information to get closer to
-                            companies.</p>
+                        <p class="step-number-content active">Enter your Institution information To Login.</p>
                         <p class="step-number-content d-none">Get to know better by adding your diploma,certificate and
                             education life.</p>
                         <p class="step-number-content d-none">Help companies get to know you better by telling then
@@ -513,7 +528,7 @@
                         </i></img>
                         <div class="text">
                             <h2>Institution Information</h2>
-                            <p>Enter your personal information to get closer to copanies.</p>
+                            <p>Enter your Institution information To Login..</p>
                         </div>
                         <div class="input-text">
                             <div class="input-div">
@@ -594,12 +609,15 @@
                             <button class="next_button">Next Step</button>
                         </div>
                     </div>
+                   
                     <div class="main">
-                        <img src="./images/whatsapp.svg" width="80" height="75" style="margin-left: 80px; margin-top: 70px;">
-                        <img src="./images/FACEBOOK.svg" width="80" height="75" style="margin-left: 48px;">
+                        <label style="font-family:bold;">Connect with our Soical Media </label>
                         <br>
-                        <img src="./images/linkedin.svg" width="80" height="75" style="margin-left: 80px; margin-top: 50px;">
-                        <img src="./images/twitter.svg" width="80" height="75" style="margin-left: 48px;"><br> 
+                        <a href="link address"><img src="./images/whatsapp.svg" width="75" height="75" style="margin-left: 50px; margin-top:70px; padding: px;"></a>
+                        <a href="link address"><img src="./images/FACEBOOK.svg" width="75" height="75" style="margin-left: 48px;"></a>
+                        <br>
+                        <a href="link address"><img src="./images/linkedin.svg" width="75" height="75" style="margin-left: 50px; margin-top: 50px;"></a>
+                        <a href="link address"><img src="./images/twitter.svg" width="75" height="75" style="margin-left: 48px;"></a><br> 
                         <br>
                         <br>
                         <div class="buttons button_space">
@@ -614,13 +632,13 @@
                             <h2>INSTITUITION LOGO</h2>
                             <p>Upload your Institution logo</p>
                         </div>
-                        <div class="break">
+                        
                         <div class="files">
                             <label>CHOOSE YOUR LOGO
-                                <input type="file" name="myImage" accept="image/png, image/svg,"style="padding:20px;">
+                        <input type="file" name="customfile" accept="image/png, image/svg," style="padding: 20px;">
                               </label>
-                              <p style="font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;">You can only upload .png & .svg files</p>
-                        </div>
+                              <p style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">You can only upload .png & .svg files</p>
+                        
                         </div>
                         <div class="buttons button_space">
                             <button class="back_button" style="margin-top: 70px;">Back</button>
